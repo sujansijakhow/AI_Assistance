@@ -1,0 +1,33 @@
+version: "3.1"
+
+rules:
+
+- rule: Answer name
+  steps:
+    - intent: ask_name
+    - action: utter_name
+
+- rule: Answer hobby
+  steps:
+    - intent: ask_hobby
+    - action: utter_hobby
+
+- rule: Answer favorite color
+  steps:
+    - intent: ask_favorite_color
+    - action: utter_favorite_color
+
+- rule: Tell time
+  steps:
+    - intent: ask_time
+    - action: action_tell_time
+
+- rule: Tell weather
+  steps:
+    - intent: ask_weather
+    - action: action_get_weather
+
+- rule: Fallback
+  steps:
+    - intent: out_of_scope
+    - action: utter_fallback

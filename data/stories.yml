@@ -1,0 +1,30 @@
+version: "3.1"
+
+stories:
+
+- story: happy mood flow
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: action_set_mood
+    - action: utter_happy
+
+- story: sad mood accepted
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: action_set_mood
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: sad mood rejected
+  steps:
+    - intent: mood_unhappy
+    - action: action_set_mood
+    - action: utter_cheer_up
+    - intent: deny
+    - action: utter_goodbye

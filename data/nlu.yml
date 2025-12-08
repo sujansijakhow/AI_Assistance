@@ -1,0 +1,91 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good evening
+
+- intent: mood_great
+  examples: |
+    - i am happy
+    - feeling good
+    - awesome
+    - great
+
+- intent: mood_unhappy
+  examples: |
+    - i am sad
+    - feeling low
+    - not good
+    - unhappy
+
+- intent: ask_name
+  examples: |
+    - what's your name
+    - who are you
+    - tell me your name
+
+- intent: ask_hobby
+  examples: |
+    - what do you like to do
+    - what is your hobby
+    - your hobbies
+
+- intent: ask_favorite_color
+  examples: |
+    - what's your favorite color
+    - which color do you like
+
+- intent: ask_time
+  examples: |
+    - what time is it
+    - tell me the time
+    - current time now
+
+
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+
+- intent: out_of_scope
+  examples: |
+    - asdjklasjd
+    - i want to fly
+    - tell me about aliens
+
+- intent: ask_weather
+  examples: |
+    - what's the weather in [Kathmandu](city)?
+    - weather in [Pokhara](city)
+    - tell me the weather in [Lalitpur](city)
+    - how is weather in [Chitwan](city)
+    - is it raining in [Butwal](city)
+    - weather of [Biratnagar](city)
+    - what's the weather in [Bhaktapur](city)
+    - how is weather at [Janakpur](city)
+    - tell me weather for [Dharan](city)
+
+- lookup: city
+  examples: |
+    - Kathmandu
+    - Pokhara
+    - Lalitpur
+    - Bhaktapur
+    - Biratnagar
+    - Dharan
+    - Butwal
+    - Chitwan
+    - Janakpur
+    - Nepalgunj
+    - Hetauda
+    - Itahari
+    - Surkhet
+    - Dang
+    - Jhapa
