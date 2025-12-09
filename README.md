@@ -1,6 +1,6 @@
 **Current Status**
 
-All the resources are not upload yet,
+All the resources are not uploaded yet,
 
 The backend is hosted on Node.js and is currently running automatically on Render
 
