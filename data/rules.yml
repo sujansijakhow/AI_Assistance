@@ -31,3 +31,11 @@ rules:
   steps:
     - intent: out_of_scope
     - action: utter_fallback
+    
+- rule: ask forecast (one turn)
+  steps:
+    - intent: ask_weather_forecast
+    - action: action_get_weather_forecast
+
+
+

@@ -28,3 +28,10 @@ stories:
     - action: utter_cheer_up
     - intent: deny
     - action: utter_goodbye
+
+- story: weather forecast flow
+  steps:
+    - intent: ask_weather_forecast
+    - action: action_get_weather_forecast  # asks for city if empty
+    - intent: inform  # user provides city
+    - action: action_get_weather_forecast  # now returns forecast

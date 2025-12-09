@@ -89,3 +89,17 @@ nlu:
     - Surkhet
     - Dang
     - Jhapa
+
+- intent: ask_weather_forecast
+  examples: |
+    - What will the weather be tomorrow?
+    - Weather forecast for tomorrow
+    - What is tomorrow's weather in Kathmandu?
+    - Will it rain tomorrow in Pokhara?
+
+- intent: inform
+  examples: |
+    - [Kathmandu](city)
+    - [Pokhara](city)
+    - [Delhi](city)
+    - [Lalitpur](city)
